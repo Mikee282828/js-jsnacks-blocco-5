@@ -39,3 +39,14 @@ function zucchinePass(array){
         }
     })
 }
+//snack 3
+let parola = "merak";
+console.log(parola,reverseString(parola));
+
+function reverseString(String){
+    let output = "";
+    for(let i = 0;i<String.length; i++){
+        output += String[String.length-i-1];
+    }
+    return output;
+}
