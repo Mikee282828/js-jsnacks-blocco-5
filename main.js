@@ -53,7 +53,7 @@ function reverseString(String){
 
 //snack 4
 let firstArray = ["a","b","c"];
-let secondArray = [1,2,3,4,5];
+let secondArray = [1,2,4,5];
 
 function arrayMixer(array1,array2){
     let arrayMixed = [];
