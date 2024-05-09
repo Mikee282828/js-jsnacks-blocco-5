@@ -51,6 +51,7 @@ function reverseString(String){
     return output;
 }
 
+//chiedere luca se metto un undefined in mezzo agli array
 //snack 4
 let firstArray = ["a","b","c"];
 let secondArray = [1,2,4,5];
@@ -77,3 +78,24 @@ function arrayMixer(array1,array2){
 
 let ciao = arrayMixer(firstArray,secondArray);
 console.log(ciao);
+
+//snack 5
+let arrayLuungo = ["ciao0","ciao1","ciao2","ciao3","ciao4","ciao5","ciao6","ciao7","ciao8","ciao9"];
+function arrayExtractor(array, num1,num2){
+    if(num1>=num2){
+        console.log("il primo numero deve essere più piccolo del secondo");
+        return 0;
+    }
+    if(num2>array.length){
+        console.log("Errore, il secondo numero non può essere più grande del numero di elementi dell'array");
+        return 0;
+    }
+    let extracted = [];
+    while(num1<num2){
+        extracted.push(array[num1]);
+        num1++;
+    }
+    return extracted;
+}
+
+console.log(arrayExtractor(arrayLuungo,3,3));
