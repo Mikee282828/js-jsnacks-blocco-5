@@ -50,3 +50,30 @@ function reverseString(String){
     }
     return output;
 }
+
+//snack 4
+let firstArray = ["a","b","c"];
+let secondArray = [1,2,3,4,5];
+
+function arrayMixer(array1,array2){
+    let arrayMixed = [];
+
+    let i = 0;
+    let j = 0;
+    while(array1.length + array2.length > i+j){
+        //primo array
+        if(((i+j)%2 == 0 && array1[i] != undefined)|| array2[j] == undefined){
+            arrayMixed.push(array1[i]);
+            i++;
+        }
+        //secondo array
+        else if(((i+j)%2 != 0 && array2[j]!= undefined)|| array1[i] == undefined){
+            arrayMixed.push(array2[j]);
+            j++;
+        }
+    }
+    return arrayMixed;
+}
+
+let ciao = arrayMixer(firstArray,secondArray);
+console.log(ciao);
