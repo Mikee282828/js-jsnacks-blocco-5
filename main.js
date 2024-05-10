@@ -43,10 +43,10 @@ function zucchinePass(array){
 let parola = "merak";
 console.log(parola,reverseString(parola));
 
-function reverseString(String){
+function reverseString(string){
     let output = "";
-    for(let i = 0;i<String.length; i++){
-        output += String[String.length-i-1];
+    for(let i = 0;i<string.length; i++){
+        output += string[string.length-i-1];
     }
     return output;
 }
